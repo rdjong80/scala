@@ -36,7 +36,7 @@ Next, you can put the command in a bash file ( similar to a windows .bat or .cmd
 
 The editor opens and now you can put the folowing in the script 
 
-`/opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
+`/opt/xlarig/xlarig -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
 
 For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
 
@@ -54,8 +54,9 @@ Alternatively you can configure this to start whenever you reboot by editing the
 
 paste the following in the crontab file
  
-`@reboot /opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
+`@reboot /opt/xlarig/xlarig -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
 
+you can add the -t switch at the end to define the number of threads (cpu) you want to work with
 
 ## Ubuntu 
 
