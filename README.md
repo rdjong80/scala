@@ -85,6 +85,19 @@ Search for windows powershell or windows terminal and open it
 
 ![image](https://github.com/rdjong80/scala/assets/47658871/50a91626-69ec-47ff-999d-dbd7f978aedb)
 
+First disable realtime scanning for windows defender, otherwise we cannot even download the program
+
+`Set-MpPreference -DisableRealtimeMonitoring $true`
+
+Next, determine a location on your computer where to store the xlarig program, eg. c:\xla 
+
+create a directory through powershell and download the xlarig application 
+
+`mkdir c:\xla`
+
+`wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-win64.zip`
+
+`Expand-Archive .\xlarig-v5.2.4-win64.zip`
 
 
 
