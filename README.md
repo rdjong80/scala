@@ -71,3 +71,20 @@ libhwloc
 `sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb `
 
 `sudo apt-get install -y libhwloc-dev `
+
+
+## Windows 
+
+So here's how to setup mining with xlarig on a windows computer, most important is that we need to exclude the xlarig program from scanning by windows Defender ( or any other anti-virus )
+
+in this step-by-step instruction i will user powershell for convenience. It's simple copy and paste the commands.
+
+Search for windows powershell or windows terminal and open it
+
+![image](https://github.com/rdjong80/scala/assets/47658871/902cf9ef-cb70-4e97-bf43-56409fb69d06)
+
+![image](https://github.com/rdjong80/scala/assets/47658871/50a91626-69ec-47ff-999d-dbd7f978aedb)
+
+
+
+
