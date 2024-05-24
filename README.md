@@ -55,3 +55,10 @@ Alternatively you can configure this to start whenever you reboot by editing the
 paste the following in the crontab file
  
 `@reboot /opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
+
+
+## Ubuntu 
+
+For installing on Ubuntu server OS, the steps and prerequisites are basically the same, however on a clean install of ubuntu ( server 22.04 LTS ) i ran into some issues before i could run XLArig.
+
+
