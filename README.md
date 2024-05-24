@@ -1,4 +1,4 @@
-## Install mining on a Linux server  
+## Install XLArig on a Linux server.
 
 First things first, as a prerequisite you should have installed a linux distribution ( eg. Ubuntu , Debian ) , whether this is on your own hardware or a VPS doesn't matter. 
 Instructions on how to install / deploy Linux as a VPS should be provided by the VPS supplier 
@@ -37,6 +37,8 @@ Next, you can put the command in a bash file ( similar to a windows .bat or .cmd
 The editor opens and now you can put the folowing in the script 
 
 `/opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
+
+### For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
 
 To start mining simply type ( in the /opt/xlarig folder)    
 
