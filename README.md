@@ -25,52 +25,32 @@ Once logged in on the terminal of the linux server we need to take the following
 
 Since the xlarig is a zip file, we need to install unzip ( if not present )   
 
- 
-
-# apt install unzip 
+ `apt install unzip `
 
  Then we can unzip the application 
 
- 
-
-# unzip xlarig-v5.2.4-linux-x86_64.zip 
-
- 
+` unzip xlarig-v5.2.4-linux-x86_64.zip `
 
 Next, you can put the command in a bash file ( similar to a windows .bat or .cmd file )  
 
- 
-
-# nano mine.sh  
-
- 
+ `nano mine.sh  `    (nano is a text editor in linux )
 
 The editor opens and now you can put the folowing in the script 
 
-  
-
-/opt/xlarig/xlarig --donate-level 1 -o [pool address] -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k 
-
- 
+`/opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
 
 To start mining simply type ( in the /opt/xlarig folder)    
 
-#sh mine.sh 
+`sh mine.sh `
 
 Be aware this now runs in the foreground, so when you hit CTRL-C it will stop. To start in background use following command 
 
- 
-
-# sh mine.sh .& 
-
- 
+`sh mine.sh .& `
 
 Alternatively you can configure this to start whenever you reboot by editing the crontab file  
 
+`crontab -e` 
+
+paste the following in the crontab file
  
-
-# crontab -e 
-
- 
-
-@reboot /opt/xlarig/xlarig --donate-level 1 -o [pool address] -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k 
+`@reboot /opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
