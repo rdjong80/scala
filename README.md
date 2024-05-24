@@ -61,4 +61,13 @@ paste the following in the crontab file
 
 For installing on Ubuntu server OS, the steps and prerequisites are basically the same, however on a clean install of ubuntu ( server 22.04 LTS ) i ran into some issues before i could run XLArig.
 
+You may need to install the following packages on Ubuntu before you can use xlarig.
 
+libssl
+libhwloc
+
+`wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb`
+
+`sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb `
+
+`sudo apt-get install -y libhwloc-dev `
