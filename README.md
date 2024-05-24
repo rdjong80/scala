@@ -1,4 +1,4 @@
-## Install mining on ubuntu server  
+## Install mining on a Linux server  
 
 First things first, as a prerequisite you should have installed a linux distribution ( eg. Ubuntu , Debian ) , whether this is on your own hardware or a VPS doesn't matter. 
 Instructions on how to install / deploy Linux as a VPS should be provided by the VPS supplier 
@@ -10,16 +10,15 @@ You can find installation instructions for debian here:   ( in case of installat
 
 https://www.debian.org/releases/bookworm/installmanual 
 
-Once logged in on the terminal of the linux server we need to take the following steps  
-
-1. Create a folder were we install xmrig,  normally the /opt folder is were you put software, but this can be any folder ( for example your home dir  ( 
-   /home/user )  
+Once logged in on the terminal of the linux server we need to take the following steps.
+Create a folder were we install xmrig,  normally the /opt folder is were you put software, but this can be any folder ( for example your home dir  ( 
+/home/user )  
 
 ` mkdir /opt/xmrig `
 
 ` cd /opt/xmrig `
 
-2. Download the latest release of xlarig from github 
+Download the latest release of xlarig from github 
 
 `wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-linux-x86_64.zip `
 
