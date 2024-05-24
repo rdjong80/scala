@@ -14,9 +14,9 @@ Once logged in on the terminal of the linux server we need to take the following
 Create a folder were we install xmrig,  normally the /opt folder is were you put software, but this can be any folder ( for example your home dir  ( 
 /home/user )  
 
-` mkdir /opt/xmrig `
+` mkdir /opt/xlarig `
 
-` cd /opt/xmrig `
+` cd /opt/xlarig `
 
 Download the latest release of xlarig from github 
 
@@ -38,7 +38,7 @@ The editor opens and now you can put the folowing in the script
 
 `/opt/xlarig/xlarig --donate-level 1 -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
 
-### For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
+For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
 
 To start mining simply type ( in the /opt/xlarig folder)    
 
