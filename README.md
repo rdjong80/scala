@@ -99,5 +99,13 @@ create a directory through powershell and download the xlarig application
 
 `Expand-Archive .\xlarig-v5.2.4-win64.zip`
 
+add exclusion in windows defender for the c:\xla folder
+
+`set-mppreference -exclusionpath c:\xla`
+
+next, enable windows defender again.
+
+`Set-MpPreference -DisableRealtimeMonitoring $false`
+
 
 
