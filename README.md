@@ -64,14 +64,16 @@ For installing on Ubuntu server OS, the steps and prerequisites are basically th
 
 You may need to install the following packages on Ubuntu before you can use xlarig.
 
-libssl
-libhwloc
+-libssl
+-libhwloc
 
-`wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb`
+```bash
+wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
 
-`sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb `
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb 
 
-`sudo apt-get install -y libhwloc-dev `
+sudo apt-get install -y libhwloc-dev 
+```
 
 
 ## Windows 
@@ -87,23 +89,24 @@ Search for windows powershell or windows terminal and open it
 ![image](https://github.com/rdjong80/scala/assets/47658871/50a91626-69ec-47ff-999d-dbd7f978aedb)
 
 First disable realtime scanning for windows defender, otherwise we cannot even download the program
-
-`Set-MpPreference -DisableRealtimeMonitoring $true`
+```powershell
+Set-MpPreference -DisableRealtimeMonitoring $true
+```
 
 Next, determine a location on your computer where to store the xlarig program, eg. c:\xla 
 
 create a directory through powershell and download the xlarig application 
 ```powershell 
-`mkdir c:\xla`
+mkdir c:\xla
 
-`wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-win64.zip`
+wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-win64.zip
 
-`Expand-Archive .\xlarig-v5.2.4-win64.zip`
+Expand-Archive .\xlarig-v5.2.4-win64.zip
 ```
 add exclusion in windows defender for the c:\xla folder
 
 ```powershell
-`set-mppreference -exclusionpath c:\xla`
+set-mppreference -exclusionpath c:\xla
 ```
  
 next, enable windows defender again.
