@@ -50,7 +50,7 @@ Be aware this now runs in the foreground, so when you hit CTRL-C it will stop. T
 
 Alternatively you can configure this to start whenever you reboot by editing the crontab file  
 
-`crontab -e` 
+''''crontab -e'''
 
 paste the following in the crontab file
  
