@@ -93,21 +93,23 @@ First disable realtime scanning for windows defender, otherwise we cannot even d
 Next, determine a location on your computer where to store the xlarig program, eg. c:\xla 
 
 create a directory through powershell and download the xlarig application 
-
+```powershell 
 `mkdir c:\xla`
 
 `wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-win64.zip`
 
 `Expand-Archive .\xlarig-v5.2.4-win64.zip`
-
+```
 add exclusion in windows defender for the c:\xla folder
 
+```powershell
 `set-mppreference -exclusionpath c:\xla`
-
+```
+ 
 next, enable windows defender again.
 
 ```powershell
-`Set-MpPreference -DisableRealtimeMonitoring $false`
+Set-MpPreference -DisableRealtimeMonitoring $false
 ```
 
 
