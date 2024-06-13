@@ -106,7 +106,9 @@ add exclusion in windows defender for the c:\xla folder
 
 next, enable windows defender again.
 
+```powershell
 `Set-MpPreference -DisableRealtimeMonitoring $false`
+```
 
 
 
