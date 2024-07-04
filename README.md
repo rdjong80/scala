@@ -13,27 +13,27 @@ https://www.debian.org/releases/bookworm/installmanual
 Once logged in on the terminal of the linux server we need to take the following steps.
 Create a folder were we install xmrig,  normally the /opt folder is were you put software, but this can be any folder ( for example your home dir  ( 
 /home/user )  
+```bash
+ mkdir /opt/xlarig 
 
-` mkdir /opt/xlarig `
-
-` cd /opt/xlarig `
-
+ cd /opt/xlarig 
+```
 Download the latest release of xlarig from github 
-
-`wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-linux-x86_64.zip `
-
+```bash
+wget https://github.com/scala-network/XLArig/releases/download/v5.2.4/xlarig-v5.2.4-linux-x86_64.zip 
+```
 Since the xlarig is a zip file, we need to install unzip ( if not present )   
-
- `apt install unzip `
-
+```bash
+ apt install unzip 
+```
  Then we can unzip the application 
-
-` unzip xlarig-v5.2.4-linux-x86_64.zip `
-
+```bash
+ unzip xlarig-v5.2.4-linux-x86_64.zip 
+```
 Next, you can put the command in a bash file ( similar to a windows .bat or .cmd file )  
-
- `nano mine.sh  `    (nano is a text editor in linux )
-
+```bash
+ nano mine.sh      (nano is a text editor in linux )
+```
 The editor opens and now you can put the folowing in the script 
 
 `/opt/xlarig/xlarig -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
@@ -41,18 +41,19 @@ The editor opens and now you can put the folowing in the script
 For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
 
 To start mining simply type ( in the /opt/xlarig folder)    
-'''bash
-`sh mine.sh `
-'''
+```bash
+sh mine.sh 
+```
 Be aware this now runs in the foreground, so when you hit CTRL-C it will stop. To start in background use following command 
-'''bash
-`sh mine.sh .& `
-'''
+```bash
+sh mine.sh .& 
+```
 Alternatively you can configure this to start whenever you reboot by editing the crontab file  
 
-'''bash
-```crontab -e```
-'''
+```bash
+crontab -e
+```
+
 paste the following in the crontab file
  
 `@reboot /opt/xlarig/xlarig -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
