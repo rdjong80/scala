@@ -115,7 +115,7 @@ next, enable windows defender again.
 
 ```powershell
 Set-MpPreference -DisableRealtimeMonitoring $false
-
+```
 
 
 
