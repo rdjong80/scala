@@ -41,17 +41,18 @@ The editor opens and now you can put the folowing in the script
 For settings regarding pool address / url , ports, difficulty settings you should refer to the pool website's FAQ.
 
 To start mining simply type ( in the /opt/xlarig folder)    
-
+'''bash
 `sh mine.sh `
-
+'''
 Be aware this now runs in the foreground, so when you hit CTRL-C it will stop. To start in background use following command 
-
+'''bash
 `sh mine.sh .& `
-
+'''
 Alternatively you can configure this to start whenever you reboot by editing the crontab file  
 
+'''bash
 ```crontab -e```
-
+'''
 paste the following in the crontab file
  
 `@reboot /opt/xlarig/xlarig -o POOL_ADDRESS -u YOUR_WALLET_ADDRESS_HERE -p WORKER_NAME -a panthera –k `
